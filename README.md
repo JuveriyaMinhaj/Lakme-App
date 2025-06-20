@@ -17,7 +17,10 @@ A frontend-based Lakme cosmetics web app that simulates a user-friendly online s
 ---
 
 ## 📸 Screenshots
-![Screenshot 2025-05-29 144517](https://github.com/user-attachments/assets/0488f681-980b-47ac-9f85-49e610463cd8)
+![Screenshot 2025-06-20 171315](https://github.com/user-attachments/assets/345b5d9d-55c3-4ccf-ad20-1dc3ab37b8f2)
+![Screenshot 2025-06-20 171224](https://github.com/user-attachments/assets/bd2fa1f4-fd73-4ae5-816d-6cc3237e4c11)
+![Screenshot 2025-06-20 171258](https://github.com/user-attachments/assets/2b76545a-031e-4ba1-8299-411ba245a921)
+![Screenshot 2025-06-20 171243](https://github.com/user-attachments/assets/0a78cef5-e42b-43dc-a5bc-002fcbd3b169)
 
 ---
 
