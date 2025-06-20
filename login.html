@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakme App - Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('bg1.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(24, 25, 27, 0.8); /* Transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #7b5555;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #ff4081; /* Lakme theme color */
+            color: rgb(20, 53, 110);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e91e63;
+        }
+
+        h1 {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login to Lakme</h1>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="loginSubmit">Login</button>
+        <p id="loginError" style="color: red; display: none;">Invalid Login, please try again.</p>
+    </div>
+
+    <script>
+        document.getElementById("loginSubmit").addEventListener("click", function() {
+            // Basic login simulation
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "user" && password === "password") {
+                window.location.href = "home.html"; // Redirect to home page
+            } else {
+                document.getElementById("loginError").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-bottom: 100px; /* Add margin to avoid content overlapping with footer */
+}
+
+header {
+    background-color: #ff8c94;
+    padding: 20px;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4b4b;
+}
+
+#features, #details, #cartSection {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#detailsContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+#cartItems {
+    margin: 10px 0;
+}
+
+#paymentBtn {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure footer stays on top */
+    text-align: center;
+}
+
+footer button {
+    background-color: #ff6f61;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background-color: #ff4b4b;
+}
+
+#cartSection {
+    padding-bottom: 100px; /* Ensure enough space above footer */
+}.featureBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureLabel {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(53, 173, 40);
+    text-align: center;
+}

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakme App - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add a background image to the "Welcome to Lakme" header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-image: url('bg2.jpg'); /* Replace with your image path */
+            background-size: cover;
+            color: white;
+        }
+
+        #features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        /* Background images for feature buttons */
+        .featureBtn {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border: none;
+            color: rgb(53, 173, 40);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .featureBtn[data-feature="makeup"] {
+            background-image: url('mg.jpg'); /* Replace with actual image path */
+        }
+
+        .featureBtn[data-feature="skincare"] {
+            background-image: url('sb.jpg'); /* Replace with actual image path */
+        }
+
+        .featureBtn[data-feature="haircare"] {
+            background-image: url('hb.jpg'); /* Replace with actual image path */
+        }
+
+        .featureBtn[data-feature="myorders"] {
+            background-image: url('orders.jpg'); /* Replace with actual image path */
+        }
+
+        /* Display products in horizontal order with smaller font */
+        #detailsContent {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 12px; /* Minimum font size for products */
+        }
+
+        #detailsContent div {
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #detailsContent img {
+            max-width: 100px; /* Adjust image size */
+        }
+
+        /* Order History Section */
+        #orderHistory {
+            display: none;
+            padding: 20px;
+        }
+
+        #orderHistory div {
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        /* Wishlist and Exclusive Offers Sections */
+        #wishlistSection, #exclusiveOffersSection {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lakme</h1>
+        <h2>Select a Feature</h2>
+    </header>
+
+    <!-- Feature Section -->
+    <section id="features">
+        <div class="featureBtnContainer">
+    <button class="featureBtn" data-feature="makeup"></button>
+    <p class="featureLabel">Makeup</p>
+</div>
+ 	<div class="featureBtnContainer">
+    <button class="featureBtn" data-feature="skincare"></button>
+    <p class="featureLabel">Skincare</p>
+</div>
+	<div class="featureBtnContainer">
+    <button class="featureBtn" data-feature="haircare"></button>
+    <p class="featureLabel">Haircare</p>
+</div>
+	<div class="featureBtnContainer">
+    <button class="featureBtn" data-feature="myorders"></button>
+    <p class="featureLabel">My orders</p>
+</div>
+
+<!-- New Feature -->
+    </section>
+
+    <!-- Feature Details Section -->
+    <section id="details" style="display:none;">
+        <h2 id="detailsHeader"></h2>
+        <div id="detailsContent"></div>
+    </section>
+
+    <!-- My Orders Section -->
+    <section id="orderHistory">
+        <h2>Your Orders</h2>
+        <div id="orderList">
+            <!-- Sample orders -->
+            <div>
+                <p>Order #12345 - Delivered</p>
+                <p>Items: Lipstick, Kajal</p>
+                <p>Total: $25</p>
+            </div>
+            <div>
+                <p>Order #12346 - In Transit</p>
+                <p>Items: Serum, Shampoo</p>
+                <p>Total: $30</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <div id="wishlistSection">
+        <h2>Wishlist</h2>
+        <div id="wishlistItems"></div>
+    </div>
+
+    <!-- Exclusive Offers Section -->
+    <div id="exclusiveOffersSection">
+        <h2>Exclusive Offers</h2>
+        <div id="exclusiveOffersContent"></div>
+    </div>
+
+    <!-- Cart and Other Features -->
+    <section id="cartSection">
+        <h2>Cart</h2>
+        <div id="cartItems"></div>
+        <button id="paymentBtn" style="display:none;">Proceed to Payment</button>
+    </section>
+
+    <footer>
+        <button id="trackOrderBtn">Track Order</button>
+        <button id="logoutBtn">Logout</button>
+        <button id="wishlistBtn">Wishlist</button> <!-- Added Wishlist Feature -->
+        <button id="offersBtn">Exclusive Offers</button> <!-- Added Offers Feature -->
+    </footer>
+<script src="scripts.js"></script>
+</body>
+</html>
