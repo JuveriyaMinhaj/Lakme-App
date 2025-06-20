@@ -17,12 +17,7 @@ A frontend-based Lakme cosmetics web app that simulates a user-friendly online s
 ---
 
 ## 📸 Screenshots
-
-> 📌 *[Add 2–3 screenshots here]*  
-> Suggested:
-> - Login Page with Background
-> - Product Selection (Makeup/Skincare)
-> - Cart & Wishlist View
+![Screenshot 2025-05-29 144517](https://github.com/user-attachments/assets/0488f681-980b-47ac-9f85-49e610463cd8)
 
 ---
 
